@@ -1,6 +1,6 @@
 const express = require ("express");
 //import all controllers function
-const {createPost, fetchAllPost, getSinglePost, searchByCategory, deletePost, updatePost} = require("../postControllers.js");
+const {createPost, fetchAllPost, getSinglePost, searchByCategory, deletePost, updatePost} = require("../controllers/postControllers");
 
 //create router binstance from express
 const router = express.Router();
