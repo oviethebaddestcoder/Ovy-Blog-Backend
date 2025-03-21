@@ -26,7 +26,9 @@ mongoose.connect(mongoUrl)
 
 
     app.use("/posts", postRouters);
-    app.use("/posts", contactRouters)
+    app.use("/Contact", contactRouters)
+
+  
 
     app.listen(port, () => {
         console.log(`server running on http://localhost:${port}`);
@@ -36,3 +38,4 @@ mongoose.connect(mongoUrl)
     console.log("connect to MongoDb server failed")
     console.log(error)
 })
+
